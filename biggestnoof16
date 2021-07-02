@@ -1,0 +1,22 @@
+import java.util.*;
+class biggest
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int a[], n=16,c,d,e,f,b;
+n=sc.nextInt();
+a=new int[n];
+for(int i=0;i<n;i++){
+a[i]=sc.nextInt();
+}
+c=Math.max(Math.max(a[0],a[1]),Math.max(a[2],a[3]));
+d=Math.max(Math.max(a[4],a[5]),Math.max(a[6],a[7]));
+e=Math.max(Math.max(a[8],a[9]),Math.max(a[10],a[11]));
+f=Math.max(Math.max(a[12],a[13]),Math.max(a[14],a[15]));
+
+b=Math.max(Math.max(c,d),Math.max(e,f));
+System.out.println("Biggest number is"+b);
+
+}
+}
